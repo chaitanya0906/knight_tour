@@ -1,0 +1,3 @@
+1] http://sites.science.oregonstate.edu/~math_reu/proceedings/REU_Proceedings/Proceedings2004/2004Ganzfried.pdf
+2] https://www.slac.stanford.edu/pubs/slacpubs/0250/slac-pub-0261.pdf
+3] http://www.cs.kent.edu/~dragan/ST-Spring2016/Knights%20Tour%20Graphs.pdf
