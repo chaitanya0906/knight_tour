@@ -70,9 +70,8 @@ def find_next_pos(board, board_size, current_pos):
 		else :
 			least_neighbour_pos[len(neighbours_of_neighbour)]=[neighbour]
 	ind = sorted(least_neighbour_pos)
-	# print(least_neighbour_pos)
-	# print(ind)
-	least_neighbour_pos = random.choice(least_neighbour_pos[ind[0]])
+
+	least_neighbour_pos = random.choice(least_neighbour_pos[ind[0]])  # choose randomly among the nodes with least accessible neighbour
 	return least_neighbour_pos
 
 
@@ -80,7 +79,7 @@ def warnsdroff(board_size):
 
 	board = [[-1 for _ in range(board_size)] for _ in range(board_size)]
 	indices = [i for i in range(board_size)]
-	x_pos,  y_pos = random.choice(indices), random.choice(indices)
+	x_pos,  y_pos = random.choice(indices), random.choice(indices)  # choose start node randomly
 	move = 1
 	board[x_pos][y_pos] = move
 
@@ -119,7 +118,7 @@ if __name__ == "__main__":
 	print("Using Warnsdorff’s algorithm : ")
 
 
-	if is_solution is False :
+	if is_solution is False :  # can run forever , Add some bound on number of interations
 		print('Not Possible Solution')
 	
 	while  warnsdroff(n)==False :
