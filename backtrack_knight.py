@@ -45,7 +45,7 @@ if __name__ == "__main__":
 	print("Size of Board:", end=" ")
 	n = int(input())
 	board = [[0 for i in range(n)] for i in range(n)]
-	if solveKnightMove(board, n, 1, 0, 0):
+	if solveKnightMove(board, n, 1, 3, 1):
 		for row in board:
 			for col in row:
 				print(col, end=" ")
