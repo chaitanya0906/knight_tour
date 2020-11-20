@@ -19,7 +19,8 @@ Next We will explain our Heuristic based Solution.
 
 import random
 import sys
-
+import time
+start = time.process_time()
 rowDir = [2, 1, -1, -2, -2, -1, 1, 2]
 colDir = [1, 2, 2, 1, -1, -2, -2, -1]
 
@@ -127,3 +128,4 @@ if __name__ == "__main__":
 
 	while warnsdroff(n) == False:
 		pass
+	print(time.process_time() - start)
